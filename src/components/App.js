@@ -17,6 +17,7 @@ class App extends React.Component {
 
   onChangeType = (e) => {
     e.persist();
+    // let type = e.target.value
     this.setState(prevState => ({
       ...prevState,
       filters: {
