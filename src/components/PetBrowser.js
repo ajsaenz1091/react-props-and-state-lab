@@ -5,7 +5,7 @@ import Pet from './Pet'
 class PetBrowser extends React.Component {
   genCard(){
     return this.props.pets.map((pet, idx) => {
-      return <Pet key={idx} {...pet} onAdoptPet={this.props.onAdoptPet}/>
+      return <Pet key={idx} pet={pet} onAdoptPet={this.props.onAdoptPet}/>
     })
   }
   render() {
